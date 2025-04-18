@@ -1,0 +1,146 @@
+[
+  {
+    "nome": "Império Romano",
+    "imagem": "roma.jpg",
+    "atributos": {
+      "populacao": 60,
+      "area": 5000000,
+      "forca": 85,
+      "tecnologia": 80,
+      "cultura": 95,
+      "longevidade": 503
+    }
+  },
+  {
+    "nome": "Império Mongol",
+    "imagem": "mongol.jpg",
+    "atributos": {
+      "populacao": 110,
+      "area": 24000000,
+      "forca": 95,
+      "tecnologia": 50,
+      "cultura": 65,
+      "longevidade": 162
+    }
+  },
+  {
+    "nome": "Império Britânico",
+    "imagem": "britanico.jpg",
+    "atributos": {
+      "populacao": 450,
+      "area": 35000000,
+      "forca": 90,
+      "tecnologia": 95,
+      "cultura": 90,
+      "longevidade": 400
+    }
+  },
+  {
+    "nome": "Império Otomano",
+    "imagem": "otomano.jpg",
+    "atributos": {
+      "populacao": 35,
+      "area": 5200000,
+      "forca": 80,
+      "tecnologia": 70,
+      "cultura": 85,
+      "longevidade": 623
+    }
+  },
+  {
+    "nome": "Império Persa Aquemênida",
+    "imagem": "persa.jpg",
+    "atributos": {
+      "populacao": 50,
+      "area": 8000000,
+      "forca": 75,
+      "tecnologia": 65,
+      "cultura": 80,
+      "longevidade": 220
+    }
+  },
+  {
+    "nome": "Império Chinês (Dinastia Tang)",
+    "imagem": "tang.jpg",
+    "atributos": {
+      "populacao": 80,
+      "area": 6000000,
+      "forca": 70,
+      "tecnologia": 85,
+      "cultura": 90,
+      "longevidade": 289
+    }
+  },
+  {
+    "nome": "Império Bizantino",
+    "imagem": "bizantino.jpg",
+    "atributos": {
+      "populacao": 25,
+      "area": 2300000,
+      "forca": 70,
+      "tecnologia": 75,
+      "cultura": 85,
+      "longevidade": 1123
+    }
+  },
+  {
+    "nome": "Império Asteca",
+    "imagem": "asteca.jpg",
+    "atributos": {
+      "populacao": 6,
+      "area": 220000,
+      "forca": 60,
+      "tecnologia": 40,
+      "cultura": 75,
+      "longevidade": 196
+    }
+  },
+  {
+    "nome": "Império Inca",
+    "imagem": "inca.jpg",
+    "atributos": {
+      "populacao": 12,
+      "area": 2000000,
+      "forca": 65,
+      "tecnologia": 45,
+      "cultura": 70,
+      "longevidade": 95
+    }
+  },
+  {
+    "nome": "Império Mali",
+    "imagem": "mali.jpg",
+    "atributos": {
+      "populacao": 20,
+      "area": 1100000,
+      "forca": 55,
+      "tecnologia": 50,
+      "cultura": 60,
+      "longevidade": 400
+    }
+  },
+  {
+    "nome": "Império Russo",
+    "imagem": "russo.jpg",
+    "atributos": {
+      "populacao": 150,
+      "area": 22000000,
+      "forca": 90,
+      "tecnologia": 80,
+      "cultura": 70,
+      "longevidade": 196
+    }
+  },
+  {
+    "nome": "Império Alemão",
+    "imagem": "alemanha.jpg",
+    "atributos": {
+      "populacao": 70,
+      "area": 540000,
+      "forca": 85,
+      "tecnologia": 90,
+      "cultura": 75,
+      "longevidade": 47
+    }
+  }
+]
