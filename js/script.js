@@ -161,7 +161,7 @@ function prepararRodada() {
   }
 }
 
-fetch("cartas.json")
+fetch("data/cartas.json")
   .then(res => res.json())
   .then(baralho => {
     medias = calcularMedias(baralho);
@@ -210,7 +210,7 @@ document.querySelector("#btn-jogar").addEventListener("click", function () {
 });
 
 document.querySelector("#btn-reiniciar").addEventListener("click", function () {
-  fetch("cartas.json")
+  fetch("data/cartas.json")
     .then(res => res.json())
     .then(baralho => {
       medias = calcularMedias(baralho);
