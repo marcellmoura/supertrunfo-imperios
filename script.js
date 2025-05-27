@@ -39,7 +39,6 @@ function escolherAtributoAcimaDaMedia(carta, medias) {
 
   for (let atributo in carta.atributos) {
     const diferenca = carta.atributos[atributo] - medias[atributo];
-
     if (diferenca > maiorDiferenca) {
       maiorDiferenca = diferenca;
       melhorAtributo = atributo;
@@ -50,18 +49,58 @@ function escolherAtributoAcimaDaMedia(carta, medias) {
 }
 
 function gerarHtmlCartaComRadios(carta) {
-  let html = `<h2>${carta.nome}</h2>`;
-  for (let atributo in carta.atributos) {
-    html += `<input type="radio" name="atributo" value="${atributo}"> ${atributo}: ${carta.atributos[atributo]}<br>`;
-  }
-  return html;
+  return gerarHtmlCartaBase(carta, true);
 }
 
 function gerarHtmlCarta(carta) {
-  let html = `<h2>${carta.nome}</h2>`;
+  return gerarHtmlCartaBase(carta, false);
+}
+
+function gerarHtmlCartaBase(carta, comRadios = false) {
+  let html = `
+    <div class="carta-fundo">
+      <div class="carta-moldura">
+        <div class="carta-cabecalho">
+          <h2>${carta.nome}</h2>
+        </div>
+        <div class="carta-imagem">
+        ${carta.imagem ? `<img src="img/${carta.imagem}" alt="${carta.nome}">` : ""}
+        </div>
+        <div class="carta-atributos">
+          <h3>Atributos</h3>
+  `;
+
   for (let atributo in carta.atributos) {
-    html += `<p>${atributo}: ${carta.atributos[atributo]}</p>`;
+    let valorFormatado = carta.atributos[atributo];
+
+    if (atributo === "populacao") {
+      valorFormatado = `${valorFormatado} milhões`;
+    }
+
+    if (atributo === "area") {
+      valorFormatado = `${valorFormatado.toLocaleString()} km<sup>2</sup>`;
+    }
+
+    if (comRadios) {
+      html += `
+        <div class="linha-atributo atributo-clicavel" data-atributo="${atributo}">
+          <span class="atributo-nome">${atributo}:</span>
+          <span class="atributo-valor">${valorFormatado}</span>
+        </div>`;
+    } else {
+      html += `
+        <div class="linha-atributo">
+          <span class="atributo-nome">${atributo}:</span>
+          <span class="atributo-valor">${valorFormatado}</span>
+        </div>`;
+    }
   }
+
+  html += `
+        </div>
+      </div>
+    </div>
+  `;
   return html;
 }
 
@@ -114,6 +153,7 @@ function prepararRodada() {
   if (turno === "jogador") {
     document.querySelector("#carta-jogador").innerHTML = gerarHtmlCartaComRadios(cartaAtual);
     document.querySelector("#resultado").innerHTML = "Sua vez. Escolha um atributo.";
+    document.querySelector("#btn-jogar").removeAttribute("data-selecionado");
   } else {
     let atributo = escolherAtributoAcimaDaMedia(cartaDoComputador, medias);
     document.querySelector("#carta-jogador").innerHTML = gerarHtmlCarta(cartaAtual);
@@ -133,6 +173,24 @@ fetch("cartas.json")
     prepararRodada();
   });
 
+document.addEventListener("click", function (e) {
+  const linha = e.target.closest(".atributo-clicavel");
+
+  if (linha && turno === "jogador" && !esperandoProximaRodada) {
+    // Remover seleção anterior
+    document.querySelectorAll(".atributo-clicavel").forEach(el => {
+      el.classList.remove("selecionado");
+    });
+
+    // Marcar a linha clicada
+    linha.classList.add("selecionado");
+
+    // Salvar o atributo selecionado no botão Jogar
+    const atributo = linha.getAttribute("data-atributo");
+    document.querySelector("#btn-jogar").setAttribute("data-selecionado", atributo);
+  }
+});
+
 document.querySelector("#btn-jogar").addEventListener("click", function () {
   if (esperandoProximaRodada) {
     esperandoProximaRodada = false;
@@ -142,12 +200,11 @@ document.querySelector("#btn-jogar").addEventListener("click", function () {
   }
 
   if (turno === "jogador") {
-    let inputSelecionado = document.querySelector('input[name="atributo"]:checked');
-    if (!inputSelecionado) {
+    let atributoSelecionado = this.getAttribute("data-selecionado");
+    if (!atributoSelecionado) {
       alert("Escolha um atributo para jogar!");
       return;
     }
-    let atributoSelecionado = inputSelecionado.value;
     exibirCartasEDefinirVencedor(atributoSelecionado);
   }
 });
@@ -158,8 +215,10 @@ document.querySelector("#btn-reiniciar").addEventListener("click", function () {
     .then(baralho => {
       medias = calcularMedias(baralho);
       baralho.sort(() => Math.random() - 0.5);
-      baralhoJogador = baralho.slice(0, 6);
-      baralhoComputador = baralho.slice(6);
+      const metade = Math.floor(baralho.length / 2);
+      baralhoJogador = baralho.slice(0, metade);
+      baralhoComputador = baralho.slice(metade);
+
       vitorias = 0;
       derrotas = 0;
       empates = 0;
@@ -170,4 +229,3 @@ document.querySelector("#btn-reiniciar").addEventListener("click", function () {
       prepararRodada();
     });
 });
-

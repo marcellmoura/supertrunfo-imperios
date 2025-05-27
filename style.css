@@ -1,0 +1,195 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Container das cartas */
+#cartas-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* Cartão externo branco */
+.carta {
+  background-color: white;
+  border-radius: 14px;
+  padding: 12px;
+  width: 260px;
+  min-height: 390px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Fundo com textura (camada do meio) */
+.carta-fundo {
+  background-color: #f9d78d;
+  background-image: url("img/fundo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Moldura interna com borda vermelha */
+.carta-moldura {
+  background-color: #f9d78d;
+  background-image: url("img/fundo.png");
+  background-size: cover;
+  background-blend-mode: multiply;
+  border: 2px solid #b22222;
+  border-radius: 6px;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Cabeçalho (nome do império) */
+.carta-cabecalho {
+  border-bottom: 2px solid #b22222;
+  padding: 6px 0;
+  text-align: center;
+}
+
+/* Imagem */
+.carta-imagem {
+  border-bottom: 2px solid #b22222;
+  padding: 6px 0;
+}
+
+.carta-imagem img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* Atributos */
+.carta-atributos {
+  padding: 6px 0;
+}
+
+.carta-atributos h3 {
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 2px solid #b22222;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/* Campos de atributos */
+.carta-atributos p,
+.carta-atributos label {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #000;
+  padding: 0 10px;
+  display: block;
+}
+
+.atributo {
+  margin-bottom: 6px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/* Título da carta */
+.carta-moldura h2 {
+  font-size: 18px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* Botões */
+button {
+  padding: 10px 20px;
+  margin: 10px 10px 0 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0077cc;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Linha de atributo com nome e valor */
+.linha-atributo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2px 10px;
+  font-size: 15px;
+}
+
+/* Nome do atributo (esquerda) */
+.atributo-nome {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Valor do atributo (direita) */
+.atributo-valor {
+  font-weight: bold;
+}
+
+/* Atributo clicável */
+.atributo-clicavel {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.atributo-clicavel:hover {
+  background-color: rgba(178, 34, 34, 0.1);
+  border-radius: 4px;
+}
+
+.atributo-clicavel.selecionado {
+  background-color: rgba(178, 34, 34, 0.2);
+  border: 2px solid #b22222;
+  border-radius: 4px;
+}

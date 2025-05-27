@@ -1,7 +1,7 @@
 [
   {
     "nome": "Império Romano",
-    "imagem": "roma.jpg",
+    "imagem": "roma.png",
     "atributos": {
       "populacao": 60,
       "area": 5000000,
@@ -13,7 +13,7 @@
   },
   {
     "nome": "Império Bizantino",
-    "imagem": "bizantino.jpg",
+    "imagem": "bizantino.png",
     "atributos": {
       "populacao": 25,
       "area": 2300000,
@@ -25,7 +25,7 @@
   },
   {
     "nome": "Império Mongol",
-    "imagem": "mongol.jpg",
+    "imagem": "mongol.png",
     "atributos": {
       "populacao": 110,
       "area": 24000000,
@@ -37,7 +37,7 @@
   },
   {
     "nome": "Império Otomano",
-    "imagem": "otomano.jpg",
+    "imagem": "otomano.png",
     "atributos": {
       "populacao": 35,
       "area": 5200000,
@@ -49,7 +49,7 @@
   },
   {
     "nome": "Império Persa Aquemênida",
-    "imagem": "persa_aquemenida.jpg",
+    "imagem": "persa_aquemenida.png",
     "atributos": {
       "populacao": 50,
       "area": 8000000,
@@ -61,7 +61,7 @@
   },
   {
     "nome": "Império Egípcio",
-    "imagem": "egipcio.jpg",
+    "imagem": "egipcio.png",
     "atributos": {
       "populacao": 5,
       "area": 1000000,
@@ -73,7 +73,7 @@
   },
   {
     "nome": "Império Assírio",
-    "imagem": "assirio.jpg",
+    "imagem": "assirio.png",
     "atributos": {
       "populacao": 10,
       "area": 1200000,
@@ -85,7 +85,7 @@
   },
   {
     "nome": "Império Babilônico",
-    "imagem": "babilonia.jpg",
+    "imagem": "babilonia.png",
     "atributos": {
       "populacao": 15,
       "area": 900000,
@@ -97,7 +97,7 @@
   },
   {
     "nome": "Império Hitita",
-    "imagem": "hitita.jpg",
+    "imagem": "hitita.png",
     "atributos": {
       "populacao": 8,
       "area": 600000,
@@ -109,7 +109,7 @@
   },
   {
     "nome": "Império Chinês (Han)",
-    "imagem": "han.jpg",
+    "imagem": "han.png",
     "atributos": {
       "populacao": 75,
       "area": 6000000,
@@ -121,7 +121,7 @@
   },
   {
     "nome": "Império Maurya",
-    "imagem": "maurya.jpg",
+    "imagem": "maurya.png",
     "atributos": {
       "populacao": 50,
       "area": 5000000,
@@ -133,7 +133,7 @@
   },
   {
     "nome": "Império Khmer",
-    "imagem": "khmer.jpg",
+    "imagem": "khmer.png",
     "atributos": {
       "populacao": 10,
       "area": 1000000,
@@ -145,7 +145,7 @@
   },
   {
     "nome": "Império Japonês",
-    "imagem": "japao.jpg",
+    "imagem": "japao.png",
     "atributos": {
       "populacao": 100,
       "area": 7200000,
@@ -157,7 +157,7 @@
   },
   {
     "nome": "Império Coreano (Goryeo)",
-    "imagem": "goryeo.jpg",
+    "imagem": "goryeo.png",
     "atributos": {
       "populacao": 12,
       "area": 300000,
@@ -169,7 +169,7 @@
   },
   {
     "nome": "Império Mali",
-    "imagem": "mali.jpg",
+    "imagem": "mali.png",
     "atributos": {
       "populacao": 20,
       "area": 1100000,
@@ -181,7 +181,7 @@
   },
   {
     "nome": "Império Songhai",
-    "imagem": "songhai.jpg",
+    "imagem": "songhai.png",
     "atributos": {
       "populacao": 15,
       "area": 1400000,
@@ -193,7 +193,7 @@
   },
   {
     "nome": "Império Etíope",
-    "imagem": "etiope.jpg",
+    "imagem": "etiope.png",
     "atributos": {
       "populacao": 20,
       "area": 1300000,
@@ -205,7 +205,7 @@
   },
   {
     "nome": "Império Asteca",
-    "imagem": "asteca.jpg",
+    "imagem": "asteca.png",
     "atributos": {
       "populacao": 6,
       "area": 220000,
@@ -217,7 +217,7 @@
   },
   {
     "nome": "Império Inca",
-    "imagem": "inca.jpg",
+    "imagem": "inca.png",
     "atributos": {
       "populacao": 12,
       "area": 2000000,
@@ -229,7 +229,7 @@
   },
   {
     "nome": "Império Maia",
-    "imagem": "maia.jpg",
+    "imagem": "maia.png",
     "atributos": {
       "populacao": 10,
       "area": 350000,
@@ -241,7 +241,7 @@
   },
   {
     "nome": "Império Huno",
-    "imagem": "huno.jpg",
+    "imagem": "huno.png",
     "atributos": {
       "populacao": 7,
       "area": 1500000,
@@ -253,7 +253,7 @@
   },
   {
     "nome": "Império Selêucida",
-    "imagem": "seleucida.jpg",
+    "imagem": "seleucida.png",
     "atributos": {
       "populacao": 25,
       "area": 3500000,
@@ -265,7 +265,7 @@
   },
   {
     "nome": "Império Parta",
-    "imagem": "parta.jpg",
+    "imagem": "parta.png",
     "atributos": {
       "populacao": 20,
       "area": 2500000,
@@ -277,7 +277,7 @@
   },
   {
     "nome": "Império Macedônio",
-    "imagem": "macedonia.jpg",
+    "imagem": "macedonia.png",
     "atributos": {
       "populacao": 10,
       "area": 2000000,
@@ -289,7 +289,7 @@
   },
   {
     "nome": "Império Carolíngio",
-    "imagem": "carolingio.jpg",
+    "imagem": "carolingio.png",
     "atributos": {
       "populacao": 25,
       "area": 1200000,
@@ -301,7 +301,7 @@
   },
   {
     "nome": "Império Sacro Romano-Germânico",
-    "imagem": "sacro_romano.jpg",
+    "imagem": "sacro_romano.png",
     "atributos": {
       "populacao": 40,
       "area": 1200000,
@@ -313,7 +313,7 @@
   },
   {
     "nome": "Império Espanhol",
-    "imagem": "espanhol.jpg",
+    "imagem": "espanhol.png",
     "atributos": {
       "populacao": 90,
       "area": 20000000,
@@ -325,7 +325,7 @@
   },
   {
     "nome": "Império Português",
-    "imagem": "portugues.jpg",
+    "imagem": "portugues.png",
     "atributos": {
       "populacao": 40,
       "area": 10000000,
@@ -337,7 +337,7 @@
   },
   {
     "nome": "Império Austro-Húngaro",
-    "imagem": "austrohungaro.jpg",
+    "imagem": "austrohungaro.png",
     "atributos": {
       "populacao": 50,
       "area": 676000,
@@ -349,7 +349,7 @@
   },
   {
     "nome": "Império Mughal",
-    "imagem": "mughal.jpg",
+    "imagem": "mughal.png",
     "atributos": {
       "populacao": 150,
       "area": 4000000,
@@ -361,7 +361,7 @@
   },
   {
     "nome": "Império Axumita",
-    "imagem": "axumita.jpg",
+    "imagem": "axumita.png",
     "atributos": {
       "populacao": 10,
       "area": 1200000,
@@ -373,7 +373,7 @@
   },
   {
     "nome": "Império Gúrida",
-    "imagem": "gurida.jpg",
+    "imagem": "gurida.png",
     "atributos": {
       "populacao": 12,
       "area": 1000000,
